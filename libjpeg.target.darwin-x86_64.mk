@@ -22,7 +22,7 @@ $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jccolss2-64.o: gyp_inte
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jccolss2-64.o: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jccolss2-64.o: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jccolss2-64.o: $(LOCAL_PATH)/third_party/libjpeg_turbo/simd/jccolss2-64.asm $(gyp_shared_intermediate_dir)/yasm $(GYP_TARGET_DEPENDENCIES)
-	mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jccolss2-64.o" simd/jccolss2-64.asm
+	@mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jccolss2-64.o" simd/jccolss2-64.asm
 
 
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcgrass2-64.o: gyp_local_path := $(LOCAL_PATH)
@@ -31,7 +31,7 @@ $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcgrass2-64.o: gyp_inte
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcgrass2-64.o: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcgrass2-64.o: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcgrass2-64.o: $(LOCAL_PATH)/third_party/libjpeg_turbo/simd/jcgrass2-64.asm $(gyp_shared_intermediate_dir)/yasm $(GYP_TARGET_DEPENDENCIES)
-	mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcgrass2-64.o" simd/jcgrass2-64.asm
+	@mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcgrass2-64.o" simd/jcgrass2-64.asm
 
 
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcqnts2f-64.o: gyp_local_path := $(LOCAL_PATH)
@@ -40,7 +40,7 @@ $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcqnts2f-64.o: gyp_inte
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcqnts2f-64.o: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcqnts2f-64.o: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcqnts2f-64.o: $(LOCAL_PATH)/third_party/libjpeg_turbo/simd/jcqnts2f-64.asm $(gyp_shared_intermediate_dir)/yasm $(GYP_TARGET_DEPENDENCIES)
-	mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcqnts2f-64.o" simd/jcqnts2f-64.asm
+	@mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcqnts2f-64.o" simd/jcqnts2f-64.asm
 
 
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcqnts2i-64.o: gyp_local_path := $(LOCAL_PATH)
@@ -49,7 +49,7 @@ $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcqnts2i-64.o: gyp_inte
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcqnts2i-64.o: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcqnts2i-64.o: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcqnts2i-64.o: $(LOCAL_PATH)/third_party/libjpeg_turbo/simd/jcqnts2i-64.asm $(gyp_shared_intermediate_dir)/yasm $(GYP_TARGET_DEPENDENCIES)
-	mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcqnts2i-64.o" simd/jcqnts2i-64.asm
+	@mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcqnts2i-64.o" simd/jcqnts2i-64.asm
 
 
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcsamss2-64.o: gyp_local_path := $(LOCAL_PATH)
@@ -58,7 +58,7 @@ $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcsamss2-64.o: gyp_inte
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcsamss2-64.o: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcsamss2-64.o: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcsamss2-64.o: $(LOCAL_PATH)/third_party/libjpeg_turbo/simd/jcsamss2-64.asm $(gyp_shared_intermediate_dir)/yasm $(GYP_TARGET_DEPENDENCIES)
-	mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcsamss2-64.o" simd/jcsamss2-64.asm
+	@mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jcsamss2-64.o" simd/jcsamss2-64.asm
 
 
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdcolss2-64.o: gyp_local_path := $(LOCAL_PATH)
@@ -67,7 +67,7 @@ $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdcolss2-64.o: gyp_inte
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdcolss2-64.o: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdcolss2-64.o: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdcolss2-64.o: $(LOCAL_PATH)/third_party/libjpeg_turbo/simd/jdcolss2-64.asm $(gyp_shared_intermediate_dir)/yasm $(GYP_TARGET_DEPENDENCIES)
-	mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdcolss2-64.o" simd/jdcolss2-64.asm
+	@mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdcolss2-64.o" simd/jdcolss2-64.asm
 
 
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdmerss2-64.o: gyp_local_path := $(LOCAL_PATH)
@@ -76,7 +76,7 @@ $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdmerss2-64.o: gyp_inte
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdmerss2-64.o: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdmerss2-64.o: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdmerss2-64.o: $(LOCAL_PATH)/third_party/libjpeg_turbo/simd/jdmerss2-64.asm $(gyp_shared_intermediate_dir)/yasm $(GYP_TARGET_DEPENDENCIES)
-	mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdmerss2-64.o" simd/jdmerss2-64.asm
+	@mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdmerss2-64.o" simd/jdmerss2-64.asm
 
 
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdsamss2-64.o: gyp_local_path := $(LOCAL_PATH)
@@ -85,7 +85,7 @@ $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdsamss2-64.o: gyp_inte
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdsamss2-64.o: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdsamss2-64.o: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdsamss2-64.o: $(LOCAL_PATH)/third_party/libjpeg_turbo/simd/jdsamss2-64.asm $(gyp_shared_intermediate_dir)/yasm $(GYP_TARGET_DEPENDENCIES)
-	mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdsamss2-64.o" simd/jdsamss2-64.asm
+	@mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jdsamss2-64.o" simd/jdsamss2-64.asm
 
 
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfss2fst-64.o: gyp_local_path := $(LOCAL_PATH)
@@ -94,7 +94,7 @@ $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfss2fst-64.o: gyp_inte
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfss2fst-64.o: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfss2fst-64.o: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfss2fst-64.o: $(LOCAL_PATH)/third_party/libjpeg_turbo/simd/jfss2fst-64.asm $(gyp_shared_intermediate_dir)/yasm $(GYP_TARGET_DEPENDENCIES)
-	mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfss2fst-64.o" simd/jfss2fst-64.asm
+	@mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfss2fst-64.o" simd/jfss2fst-64.asm
 
 
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfss2int-64.o: gyp_local_path := $(LOCAL_PATH)
@@ -103,7 +103,7 @@ $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfss2int-64.o: gyp_inte
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfss2int-64.o: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfss2int-64.o: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfss2int-64.o: $(LOCAL_PATH)/third_party/libjpeg_turbo/simd/jfss2int-64.asm $(gyp_shared_intermediate_dir)/yasm $(GYP_TARGET_DEPENDENCIES)
-	mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfss2int-64.o" simd/jfss2int-64.asm
+	@mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfss2int-64.o" simd/jfss2int-64.asm
 
 
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfsseflt-64.o: gyp_local_path := $(LOCAL_PATH)
@@ -112,7 +112,7 @@ $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfsseflt-64.o: gyp_inte
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfsseflt-64.o: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfsseflt-64.o: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfsseflt-64.o: $(LOCAL_PATH)/third_party/libjpeg_turbo/simd/jfsseflt-64.asm $(gyp_shared_intermediate_dir)/yasm $(GYP_TARGET_DEPENDENCIES)
-	mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfsseflt-64.o" simd/jfsseflt-64.asm
+	@mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jfsseflt-64.o" simd/jfsseflt-64.asm
 
 
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2flt-64.o: gyp_local_path := $(LOCAL_PATH)
@@ -121,7 +121,7 @@ $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2flt-64.o: gyp_inte
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2flt-64.o: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2flt-64.o: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2flt-64.o: $(LOCAL_PATH)/third_party/libjpeg_turbo/simd/jiss2flt-64.asm $(gyp_shared_intermediate_dir)/yasm $(GYP_TARGET_DEPENDENCIES)
-	mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2flt-64.o" simd/jiss2flt-64.asm
+	@mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2flt-64.o" simd/jiss2flt-64.asm
 
 
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2fst-64.o: gyp_local_path := $(LOCAL_PATH)
@@ -130,7 +130,7 @@ $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2fst-64.o: gyp_inte
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2fst-64.o: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2fst-64.o: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2fst-64.o: $(LOCAL_PATH)/third_party/libjpeg_turbo/simd/jiss2fst-64.asm $(gyp_shared_intermediate_dir)/yasm $(GYP_TARGET_DEPENDENCIES)
-	mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2fst-64.o" simd/jiss2fst-64.asm
+	@mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2fst-64.o" simd/jiss2fst-64.asm
 
 
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2int-64.o: gyp_local_path := $(LOCAL_PATH)
@@ -139,7 +139,7 @@ $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2int-64.o: gyp_inte
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2int-64.o: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2int-64.o: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2int-64.o: $(LOCAL_PATH)/third_party/libjpeg_turbo/simd/jiss2int-64.asm $(gyp_shared_intermediate_dir)/yasm $(GYP_TARGET_DEPENDENCIES)
-	mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2int-64.o" simd/jiss2int-64.asm
+	@mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2int-64.o" simd/jiss2int-64.asm
 
 
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2red-64.o: gyp_local_path := $(LOCAL_PATH)
@@ -148,7 +148,7 @@ $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2red-64.o: gyp_inte
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2red-64.o: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2red-64.o: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2red-64.o: $(LOCAL_PATH)/third_party/libjpeg_turbo/simd/jiss2red-64.asm $(gyp_shared_intermediate_dir)/yasm $(GYP_TARGET_DEPENDENCIES)
-	mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2red-64.o" simd/jiss2red-64.asm
+	@mkdir -p $(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo; cd $(gyp_local_path)/third_party/libjpeg_turbo; "$(gyp_shared_intermediate_dir)/yasm" -felf64 -D__x86_64__ -DELF -Ilinux/ -DRGBX_FILLER_0XFF -DSTRICT_MEMORY_ACCESS -Isimd/ -o "$(gyp_shared_intermediate_dir)/third_party/libjpeg_turbo/jiss2red-64.o" simd/jiss2red-64.asm
 
 
 
